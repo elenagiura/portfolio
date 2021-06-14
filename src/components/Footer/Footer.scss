@@ -1,0 +1,49 @@
+footer {
+	div.wrapper>a {
+		width: 30px;
+		padding:0;
+		display: block;
+		margin: 0 auto;
+
+		img {
+			position:relative;
+			bottom:0;
+			transition: bottom 0.3s ease;
+
+			&:hover {
+				bottom:2.5px;
+			}
+		}
+	}
+
+	div.social-networks {
+		width:100px;
+		margin: 20px auto;
+		display:flex;
+		justify-content:space-between;
+
+		a {
+			width:auto;
+			padding:0;
+
+			img {
+				width: 25px;
+				position:relative;
+				bottom:0;
+				transition: bottom 1s ease;
+
+				&:hover {
+					bottom:2px;
+				}
+			}
+		}
+	}
+
+	hr, p {
+	font-size:14px;
+		text-align: center;
+		opacity: 0.4;
+	}
+
+
+}

@@ -1,0 +1,67 @@
+section.contact {
+    border-top-left-radius: 70% 50%;
+
+	div.wrapper {
+		background-image: url('../../images/black.png');
+		background-position: 30px bottom;
+		background-repeat:no-repeat;
+		background-size:15%;
+	}
+
+	p,a {
+		text-align: center;
+	}
+
+	a {
+		display:block;
+		width: 120px;
+		margin: 15px auto;
+		transition: color 1s ease;
+		position:relative;
+
+		span {
+			position:relative;
+			z-index:555;
+		}
+
+		p {	
+			position: absolute;
+			top:0;
+			left:0;
+			width:0;
+			height:40px;
+			background-color: #707070;
+			transition: width 1s ease;
+		}
+
+		&:hover {
+			color: #ffdf6c;
+			p {
+				width:100%;
+			}
+		}
+	}
+}
+
+@media all and (max-width:750px) {
+	section.contact {
+    	border-top-left-radius: 50% 30%;
+    }
+} 
+
+@media all and (max-width:400px) {
+	section.contact {
+    	border-top-left-radius: 0% 0%;
+
+    	p,a {
+			font-size:16px;
+		}
+
+		a {
+			p {
+				height: 34px;
+			}
+		}
+
+    }
+} 

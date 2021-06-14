@@ -1,0 +1,191 @@
+section.about-me {
+	border-bottom-right-radius: 80% 40%;
+
+	position:relative;
+
+
+	h2 {
+		margin-bottom:20px;
+	}
+
+	img {
+	    float: right;
+   		width: 300px;
+   		margin:0 30px;
+   		border-bottom-right-radius: 60% 30%;
+   		border-bottom-left-radius: 30% 15%;
+   		border-top-left-radius: 40% 30%;
+   		border-top-right-radius: 30% 15%;
+	}
+
+	p {
+		text-align: justify;
+	}
+
+	q {
+		font-style:italic;
+	}
+
+	ul {
+		margin: 10px 0;
+		display:flex;
+		list-style-type:none;
+		flex-wrap:wrap;
+
+		:nth-child(1){
+			background-image: url('../../images/techn-icons/react.png');
+		}
+
+		:nth-child(2){
+			background-image: url('../../images/techn-icons/js.png');
+		}
+
+		:nth-child(3){
+			background-image: url('../../images/techn-icons/html.png');
+		}
+
+		:nth-child(4){
+			background-image: url('../../images/techn-icons/css.png');
+		}
+
+		:nth-child(5){
+			background-image: url('../../images/techn-icons/scss.png');
+		}
+
+		:nth-child(6){
+			background-image: url('../../images/techn-icons/gh.png');
+		}
+
+		:nth-child(7){
+			background-image: url('../../images/techn-icons/npm.png');
+		}
+
+		:nth-child(8){
+			background-image: url('../../images/techn-icons/vs.png');
+		}
+
+		li {
+
+			background-repeat: no-repeat;
+			background-size:contain;
+			line-heinht: 35px;
+			margin: 10px 0;
+			width:135px;
+			padding: 0 36px;
+			font-size:16px;
+		}
+	}
+}
+
+section.about-me a {
+	margin: 40px auto;
+	position:relative;
+	width: 200px;
+	display:block;
+	text-align:center;
+	transition: color 1s ease;
+	position:relative;
+
+	span:first-child {
+		position:relative;
+		z-index:555;
+	}
+
+	span:last-child {	
+		position: absolute;
+		top:0;
+		left:0;
+		width:0;
+		height:40px;
+		background-color: #707070;
+		transition: width 1s ease;
+	}
+
+	&:hover {
+		color: #ffdf6c;
+		span {
+			width:100%;
+		}
+	}
+}
+
+@media all and (max-width: 900px) {
+	section.about-me {
+		p {
+			font-size: 18px;
+		}
+	}
+}
+
+@media all and (max-width: 800px) {
+	section.about-me {
+		border-bottom-right-radius: 50% 20%;
+
+		h2 {
+			margin-bottom:0;
+		}
+
+		img {
+		    float: none;
+		    display:block;
+	   		margin:10px auto 30px;
+		}
+
+		ul {
+			justify-content: center;
+
+			li {
+				line-heinht: 30px;
+				margin: 5px 0;
+			}
+		}
+	}
+
+	section.about-me a {
+		width: 180px;
+		font-size:18px;
+
+		span:last-child {	
+			height:38px;
+		}
+	}
+}
+
+@media all and (max-width: 600px) {
+	section.about-me {
+		border-bottom-right-radius: 20% 10%;
+
+		img {
+			width: 250px;
+			margin-top:15px;
+		}
+
+		p {
+			font-size:16px;
+			text-align:center;
+		}
+	}
+
+	section.about-me a {
+		margin: 30px auto 10px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	section.about-me {
+		border-bottom-right-radius: 0 0;
+
+		img {
+			width: 200px;
+		}
+
+		ul {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	section.about-me a span{
+		font-size: 16px;
+	}
+}

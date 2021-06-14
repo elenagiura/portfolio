@@ -1,0 +1,171 @@
+section.projects {
+	ul {
+		margin: 30px 0;
+		list-style-type:none;
+
+		li {
+		margin: 50px 0;
+
+			&:nth-child(5n) {
+				div{
+					background-color:#d0f3d0;
+				}
+			}
+			&:nth-child(5n+1) {
+				div{
+					background-color:#ffd0d0;
+				}
+			}
+			&:nth-child(5n+2) {
+				div{
+					background-color:#ccccff;
+				}
+			}
+			&:nth-child(5n+3) {
+				div{
+					background-color:#fdcefd;
+				}
+			}
+			&:nth-child(5n+4) {
+				div{
+					background-color:#ffffb5;
+				}
+			}
+		}
+
+		article {
+			display:inline-block;
+			width:45%;
+			text-align:right;
+			font-size: 14px;
+			height: 320px;
+
+			p {	
+				margin: 10px 0 25px;
+				font-size:18px;
+			}
+
+			a:nth-child(3) {
+				transition: background-color 1s ease;
+
+				&:hover {
+					background-color:#e9b600;
+					color:#fff;
+				}
+			}
+
+			a:last-child {
+				border:none;
+				margin-left:10px;
+				position: relative;
+				transition: left 1.5s ease;
+
+				&:hover {
+					left:5px;
+				}
+			}
+		}
+
+		div {
+			width:450px;
+			height:310px;
+			float:right;
+			overflow:hidden;
+
+			img {
+				transition: padding 1s linear;
+				width:100%;
+				padding: 40px;
+
+				&:hover {
+					padding:0;
+				}
+			}
+		}
+
+		h3 {
+			disply:inline-block;
+			font-size:28px;
+			text-transform:uppercase;
+		}
+	}
+}
+
+@media all and (max-width:1000px) {
+	section.projects {
+		ul {
+			margin: 20px 0;
+
+			li {
+				margin: 20px 0;
+			}
+
+			article {
+				p {	
+					font-size:16px;
+				}
+
+				a:nth-child(3), a:last-child {
+					font-size: 16px;
+				}
+			}
+
+			div {
+				width:400px;
+				height:280px;
+			}
+
+			h3 {
+				font-size:22px;
+			}
+		}
+	}
+}
+
+@media all and (max-width:850px) {
+	section.projects {
+		ul {
+			li {
+			margin-bottom: 40px;
+			padding-bottom:20px;
+			border-bottom: solid 1px #e9b600;
+
+			&:last-child {
+				border-bottom:none;
+				margin-bottom:0;
+				padding-bottom:0;
+			}
+			}
+
+			article {
+				width:100%;
+				text-align: left;
+				height:auto;
+				padding-bottom:20px;
+			}
+
+			div {
+				width:450px;
+				height:310px;
+				float:none;
+				display:block;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@media all and (max-width:500px) {
+	section.projects {
+		ul {
+			div {
+				width:100%;
+				height:auto;
+
+				img {
+					padding:0px;
+				}
+			}
+		}
+	}
+}
