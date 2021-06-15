@@ -2,6 +2,7 @@ import tanatosStudio from './images/projects/tanatos-studio.jpg';
 import iFood from './images/projects/i-food.jpg';
 import youTube from './images/projects/yt.jpg';
 import movies from './images/projects/movies.jpg';
+import mu from './images/projects/mu.jpg';
 
 export const datas = [
 	{
@@ -24,6 +25,13 @@ export const datas = [
 		image: iFood,
 		live: 'https://elenagiura.github.io/project-cooking-recipes/',
 		source: 'https://github.com/elenagiura/project-cooking-recipes'
+	},
+	{
+		title: 'Manchester United',
+		description: "Application for changing random player on every 30 seconds. Used technologies: HTML5, CSS3, JavaScript ES5",
+		image: mu,
+		live: 'https://elenagiura.github.io/project-foodbal-players/',
+		source: 'https://github.com/elenagiura/project-foodbal-players'
 	},
 	{
 		title: 'Tanatos Studio',
