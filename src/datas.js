@@ -3,8 +3,16 @@ import iFood from './images/projects/i-food.jpg';
 import youTube from './images/projects/yt.jpg';
 import movies from './images/projects/movies.jpg';
 import mu from './images/projects/mu.jpg';
+import form from './images/projects/form.png';
 
 export const datas = [
+	{
+		title: 'LogIn Form',
+		description: "Simple form with several questions, and checks of entered terms. Used technologies: HTML5, CSS3 and JavaScript ES5. Used mockup: https://dribbble.com/shots/2371603-Form-Flow",
+		image: form,
+		live: 'https://elenagiura.github.io/elimination-task/',
+		source: 'https://github.com/elenagiura/elimination-task'
+	},
 	{
 		title: 'Movie Bucketlist',
 		description: "This application gives you possibility to store the movies that you want to watch. It's build with HTML5, SASS, React.js and the API - http://www.omdbapi.com",
