@@ -3,7 +3,7 @@ import iFood from './images/projects/i-food.jpg';
 import youTube from './images/projects/yt.jpg';
 import movies from './images/projects/movies.jpg';
 import mu from './images/projects/mu.jpg';
-import form from './images/projects/form.png';
+import form from './images/projects/form.jpg';
 
 export const datas = [
 	{
