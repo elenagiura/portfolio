@@ -36,9 +36,11 @@ const AboutMe = () => {
 					<ul>
 						<li>React.Js</li>
 						<li>JavaScript</li>
+						<li>TypeScript</li>
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>SASS</li>
+						<li>Git</li>
 						<li>GitHub</li>
 						<li>NPM</li>
 						<li>VS Code</li>
